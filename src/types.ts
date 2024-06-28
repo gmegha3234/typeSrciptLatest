@@ -27,4 +27,25 @@ add(1);
 //TypeScript will infer the function’s return type based on its return statements.
 
 
+//return promisr
+async function getFavourite():Promise<number>{
+    return 28;
+}
 
+//anonymous types--This process is called contextual typing because the context
+// that the function occurred within informs what type it should have.
+const names=['Alice','Denim','Jack'];
+names.forEach((name)=>console.log(name.toUpperCase()));
+
+names.forEach(function(name){
+    console.log(name.toLowerCase());
+})
+
+//Object
+function printCoordinates(pt:{value1:number;value2:number;value3?:number}){
+    console.log("The coordinates are ",pt.value1,pt.value2,pt?.value3);
+}
+printCoordinates({value1:10,value2:20});
+
+
+//

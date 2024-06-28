@@ -26,3 +26,4 @@ const users=[
 ];
 const loggedUserDetails = users.find((u)=>u.name===loggedUser);
 console.log(loggedUserDetails?.age);
+
